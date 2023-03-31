@@ -59,6 +59,14 @@ export const populateCard = ({
             wrap: true,
           },
           {
+            type: 'mention',
+            text: `<at>DevOps - test</at>`,
+            mentioned: {
+              id: `19:3c0d68f48f3f4aa0bd97eb0db82cadf5`,
+              name: `DevOps - test`
+            }
+          },
+          {
             type: 'TextBlock',
             text: `by ${commit.data.commit.author.name}${
               author.login ? ` (@${author.login})` : ''
